@@ -1,16 +1,71 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Web App – Simple Interest Calculator</title>
     </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <div class="maindiv">
+        <body class="a">
+            <h1>Simple Interest Calculator</h1>
+    
+            <div class="maindiv2">
+            Amount <input type="number"  id="principal">  <br/>
+            Rate 
+            <input type="range"  id="rate" onclick="updateRate() " min="1" max="20" value="10.25" step="0.25">
+            <span id="rate_val">
+                10.25%
+            </span><br/>
+            No. of Years 
+            <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+                <!-- fill in the rest of the values-->
+            </select><br/>
+           
+    
+            <button onclick="compute()">Compute Interest</button><br/>
+            <span id="result">
+            </span>
+            <span id="a" class="highlight">
+            </span>
+            <span id="result2">
+            </span>
+            <span id="a2" class="highlight">
+            </span>
+            <span id="result3">
+            </span>
+            <span id="a3" class="highlight">
+            </span>
+            <span id="result4">
+            </span>
+            <span id="a4" class="highlight">
+            </span>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+            <br/>
+        </div>
+        </body>
+        <footer>
+
+            &#169; Everyone Can Get Rich<br/>
+            This Calculator belongs to Derya Kilic
+    
+    
+        </footer>
+    </div>
+
+
+    
+
+
+ 
 </html>
